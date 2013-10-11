@@ -1,0 +1,85 @@
+@import "colors";
+
+div {
+	
+}
+
+header {
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  font-family: "Helvetica Neue", Helvetica, Arial;	
+}
+
+.header_1 {
+	position: fixed;
+	top: 0; left: 10px; bottom: 111px;
+	
+}
+
+.header_2 {
+	position: fixed;
+	top: 0px; left: 132px; bottom: 111px;
+}
+
+.header_3 {
+	position: fixed;
+	top: 0px; left: 636px; bottom: 111px;
+}
+
+
+nav {
+
+}
+
+.nav_1 {
+	text-align: left;
+	position: absolute;
+	top: 112px; left: 10px; bottom: 801px;
+}
+
+section {
+	
+}
+
+.bracket_1 {
+	
+}
+
+.image_area_1 {
+	position: absolute;
+	top: 112px; left: 133px; bottom: 423px;
+}
+
+.bracket_2 {
+	
+}
+
+.nav_2 {
+		position: fixed;
+		  top: 150px; left: 225px; bottom: 111px;
+}
+
+body, html {
+  color: $primary-text-color;
+  font-family: "Helvetica Neue", Helvetica, Arial;
+  padding: 0px 0px 0px 0px;
+}
+
+article {
+	
+}
+
+.content_area_1 {
+	position: fixed;
+	top: 424px; left: 265;
+	color: $primary-text-color;
+}
+
+footer {
+	position: fixed;
+	top: 500px; left: 0;
+	width:100%;
+	color: $primary-text-color;
+	background-color: $primary-background-color;	
+}

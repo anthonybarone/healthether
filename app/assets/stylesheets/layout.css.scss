@@ -47,20 +47,14 @@ div {
 		  top: 150px; left: 225px; bottom: 111px;
 }
 
-body, html {
-  color: $primary-text-color;
-  font-family: "Helvetica Neue", Helvetica, Arial;
-  padding: 0px 0px 0px 0px;
-}
-
 .content_area_1 {
-	position: fixed;
+	position: absolute;
 	top: 424px; left: 265;
 	color: $primary-text-color;
 }
 
 footer {
-	position: fixed;
+	position: absolute;
 	top: 500px; left: 0;
 	width:100%;
 	color: $primary-text-color;

@@ -27,7 +27,11 @@ div {
 	position: absolute;
 	top: 112px; left: 30px; bottom: 801px;
 	font-size: 0.6em;
-	
+}
+
+#nav_1_hover:hover {
+	background-color: $primary-background-color;
+	display: block;
 }
 
 .bracket_1 {

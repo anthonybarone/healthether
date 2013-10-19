@@ -1,0 +1,22 @@
+<article id="concept" class="concept">
+  <header>
+    <h1><%= @concept.name %></h1>
+    <h3>Image Path: <%= @concept.image %></h3>
+    <h3>Video Path: <%= @concept.video %></h3> 
+  </header>
+
+  <p>
+    <%= @concept.content_area_1 %>
+  </p>
+  
+  <footer>
+
+    <nav>
+      <%= link_to 'Edit', edit_concept_path(@concept), class: 'button' %>
+      <%= link_to 'Delete', @concept, 
+                  class: 'button',
+                  method: :delete, data: { confirm: 'Are you sure?' } %>
+      <%= link_to 'Cancel', concepts_path, class: 'button' %>
+    </nav>
+  </footer>
+</article>

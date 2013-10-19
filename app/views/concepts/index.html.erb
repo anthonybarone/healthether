@@ -1,40 +1,28 @@
-<div class="header_1">
-<%= image_tag("logos/healthether_logo_and_tagline.png", width: '636', height: '111') %>
-</div>
+<ul id="concepts">
+  <% @concepts.each do |concept| %>
+      <article class="concept">
+        <table>
+          <tr>
+            <th>Name: </th>
+            <td><%= link_to concept.name, concept %></td>
+          </tr>
+          <tr>
+            <th>Image Path: </th>
+            <td><%= concept.image %></td>
+          </tr>
+          <tr>
+            <th>Video Path: </th>
+            <td><%= concept.video %></td>
+          </tr>
+          <tr>
+            <th>Content Area 1: </th>
+            <td><%= concept.content_area_1 %></td>
+          </tr>
+        </table>
+        <footer>
+        </footer>
+      </article>
+  <% end %>
+</ul>
 
-<div class="header_2">
-</div>
-
-<div class="header_3">
-  <h5>
-  sign in
-  </h5>
-</div>
-
-<div class="nav_1" id="nav_1_hover:hover">
-    <%= link_to("THE IDEA", "http://www.healthether.com") %><br>
-    <%= link_to("PRODUCT CREATOR", "http://www.healthether.com") %><br>
-    <%= link_to("PRODUCT TYPES", "http://www.healthether.com") %><br>
-    <%= link_to("PRODUCT SPECS", "http://www.healthether.com") %><br>
-    <%= link_to("KEY PLAYERS", "http://www.healthether.com") %><br>
-    <%= link_to("CONTRACTS", "http://www.healthether.com") %><br>
-    <%= link_to("PAYMENTS", "http://www.healthether.com") %><br>
-    <%= link_to("RENDER SERVICES", "http://www.healthether.com") %><br>
-    <%= link_to("MAINTENANCE", "http://www.healthether.com") %><br>
-</div>
-
-<div class="image_area_1">
-<%= image_tag("concepts/concept_1_THE_IDEA.png", :alt => "healthether.com", width: '636', height: '312') %>
-</div>
-
-<div class="nav_2">
-<%= image_tag("navigators/nav_2.png", :alt => "healthether.com", width: '132', height: '378') %>
-</div>
-
-<div class="content_area_1">
-Welcome to the healthether project.
-</div>
-
-<div class="footer">
-  <p>healthether.  navigating healthcare
-</div>
+  <%= link_to 'New Concept', new_concept_path(@concept), class: 'button' %>

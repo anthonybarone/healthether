@@ -1,0 +1,27 @@
+<%= form_for(@concept) do |f| %>
+  <%= render "shared/errors", object: @concept %>
+  <fieldset>
+    <ol>
+      <li class="required">
+        <%= f.label :name %>
+        <%= f.text_field :name, autofocus: true %>
+      </li>
+      <li class="required">
+        <%= f.label :image %>
+        <%= f.text_area :image, cols: 60, rows: 1 %>
+      </li>
+      <li class="required">
+        <%= f.label :video %>
+        <%= f.text_area :video, cols: 60, rows: 1 %>
+      </li>
+      <li class="required">
+        <%= f.label :content_area_1 %>
+        <%= f.text_area :content_area_1, cols: 60, rows: 6 %>
+      </li>
+    </ol>
+    <p>
+      <%= f.submit %>
+      <%= link_to "Cancel", concepts_path, class: 'button' %>
+    </p>
+  </fieldset>
+<% end %>

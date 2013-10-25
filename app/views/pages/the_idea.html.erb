@@ -13,6 +13,7 @@
 <div class="nav_1" id="nav_1_hover:hover">
     <% @concepts.each do |concept| %>
       <%= link_to concept.name, concept.image %><br>
+      <br>
     <% end %>
 </div>
 
@@ -25,9 +26,9 @@
 </div>
 
 <div class="content_area_1">
-Welcome to the healthether project.
+Welcome to healthether. This project attempts to communicate the current reality of the U.S. healthcare system by comparing it to another industry, housing. Hopefully it provides some insight into a topic that can be tricky to navigate.
 </div>
 
 <div class="footer">
-  <p>healthether.  navigating healthcare
+  <p>Created by <%= link_to "Anthony Barone", "http://www.linkedin.com/in/anthonybarrybarone/" %> in Rochester, NY.  Designed by <%= link_to "Maureen Weiss", "http://maureenweiss.com" %> in Baltimore, MD.
 </div>

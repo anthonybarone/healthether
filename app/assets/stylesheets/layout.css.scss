@@ -26,12 +26,12 @@ div {
 .nav_1 {
 	position: absolute;
 	top: 112px; left: 30px; bottom: 801px;
-	font-size: 0.6em;
-}
+	font-size: 10px;
+	a:link { color: #000080 } /* unvisited links */
+	a:visited { color: #000080 } /* visited links */
+	a:hover { font-weight: bold } /* user hovers */
+	a:active { color: #000080 } /* active links */
 
-#nav_1_hover:hover {
-	background-color: $primary-background-color;
-	display: block;
 }
 
 .bracket_1 {
@@ -56,12 +56,20 @@ div {
 	position: absolute;
 	top: 424px; left: 265px;
 	color: $primary-text-color;
+	border: 15px solid #fff;
+	padding-left: 10px;
+	padding-right: 15px;
+	width: 450px;
 }
 
 .footer {
 	position: absolute;
-	top: 700px; left: 0;
+	top: 600px; left: 0;
 	width:100%;
 	color: $primary-text-color;
-	background-color: $primary-background-color;	
+	background-color: $primary-background-color;
+	a:link { color: #000080 } /* unvisited links */
+	a:visited { color: #000080 } /* visited links */
+	a:hover { font-weight: bold } /* user hovers */
+	a:active { color: #000080 } /* active links */	
 }

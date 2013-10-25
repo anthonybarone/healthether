@@ -1,7 +1,9 @@
 Healthether::Application.routes.draw do
   resources :concepts
   
-  root :to => 'pages#index'
+  get '/pages/the_idea', to: 'pages#the_idea'
+  
+  root :to => 'pages#the_idea'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

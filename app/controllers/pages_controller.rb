@@ -1,9 +1,7 @@
 class PagesController < ApplicationController
   
-  def index
-  end
-  
   def the_idea
+    @concepts = Concept.all
   end
   
   def product_creator

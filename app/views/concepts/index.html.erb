@@ -1,6 +1,7 @@
-<ul id="concepts">
+<br>
+<br>
+<ul>
   <% @concepts.each do |concept| %>
-      <article class="concept">
         <table>
           <tr>
             <th>Name: </th>
@@ -19,10 +20,12 @@
             <td><%= concept.content_area_1 %></td>
           </tr>
         </table>
-        <footer>
-        </footer>
-      </article>
+
   <% end %>
 </ul>
 
   <%= link_to 'New Concept', new_concept_path(@concept), class: 'button' %>
+
+<br>  
+<br>
+<br>  

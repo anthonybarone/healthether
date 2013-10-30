@@ -1,0 +1,35 @@
+<div class="header_1">
+<%= image_tag("logos/healthether_logo_and_tagline.png", width: '636', height: '111') %>
+</div>
+
+<div class="header_2">
+</div>
+
+<div class="header_3">
+  <h5>
+  </h5>
+</div>
+
+<div class="nav_1" id="nav_1_hover:hover">
+    <% @concepts.each do |concept| %>
+      <%= link_to concept.name, concept.image %><br>
+      <br>
+    <% end %>
+</div>
+
+<div class="image_area_1">
+<%= image_tag("concepts/concept_3_product_types.png", :alt => "healthether.com", width: '636', height: '312') %>
+</div>
+
+<div class="nav_2">
+<%= image_tag("navigators/nav_2.png", :alt => "healthether.com", width: '132', height: '378') %>
+</div>
+
+<div class="content_area_1">
+To keep it simple, Healthether classifies healthcare into three product types designed and developed by those at risk for medical costs – governments, health insurers and self-funded programs. Medicaid (low-income and military government financed), Medicare (elderly & disabled government financed) and Commercial Health Insurance (entry level, middle & upscale privately financed healthcare). There is an alphabet soup of product names and types that can make things confusing quickly. Stick with these three product types to keep a frame of reference to understand the primary populations and markets.
+NOTE: In all government entitlement programs, the risk for medical expenses is borne by state and/or federal government agencies and , ultimately, the taxpayers.
+
+In comparison, housing can be classified by low-income, elderly & disabled and commercial (entry level, middle & upscale housing).
+</div>
+
+<%= render "layouts/footer" %>

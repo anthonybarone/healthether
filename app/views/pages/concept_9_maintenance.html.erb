@@ -1,0 +1,34 @@
+<div class="header_1">
+<%= image_tag("logos/healthether_logo_and_tagline.png", width: '636', height: '111') %>
+</div>
+
+<div class="header_2">
+</div>
+
+<div class="header_3">
+  <h5>
+  </h5>
+</div>
+
+<div class="nav_1" id="nav_1_hover:hover">
+    <% @concepts.each do |concept| %>
+      <%= link_to concept.name, concept.image %><br>
+      <br>
+    <% end %>
+</div>
+
+<div class="image_area_1">
+<%= image_tag("concepts/concept_9_maintenance.png", :alt => "healthether.com", width: '636', height: '312') %>
+</div>
+
+<div class="nav_2">
+<%= image_tag("navigators/nav_2.png", :alt => "healthether.com", width: '132', height: '378') %>
+</div>
+
+<div class="content_area_1">
+Insurers create healthcare products protecting the insured against financial losses from medical expenses. The health insurer specifies what medical services and supplies are covered for its customers. The health insurer has business relationships with all of the key players in the healthcare industry.<br>
+<br>
+Homebuilders create housing products. The home builder specifies what construction services and materials are covered for its customers. The home builder has business relationships with all of the key players in the housing industry.
+</div>
+
+<%= render "layouts/footer" %>

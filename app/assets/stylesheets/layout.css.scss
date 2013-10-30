@@ -1,32 +1,56 @@
 @import "colors";
 
-div {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%;
-  font-family: "Helvetica Neue", Helvetica, Arial;	
+html,
+body {
+   margin:0;
+   padding:0;
+   height:100%;
+   font-family: "Helvetica Neue", Helvetica, Arial;	
 }
+
+.container {
+   min-height:100%;
+   height:100%;
+   position:relative;
+}
+
+.header {
+	position: absolute;
+	top:0; /* absolutely positioned top:0; moves it to the top of the container div */
+	width:100%;
+	height:25px;   /* Height of the header */
+	color: $header-text-color;
+	background-color: $header-background-color;
+	font-size: 10px;
+	a:link { color: $header-link-color } /* unvisited links */
+	a:visited { color: $header-link-color } /* visited links */
+	a:hover { font-weight: bold } /* user hovers */
+	a:active { color: $header-link-color } /* active links */
+	}	
 
 .header_1 {
 	position: absolute;
-	top: 0px; left: 10px; bottom: 111px;
-	
+	top: 25px; left: 10px; bottom: 111px;
+	padding-top:0;   /* Height of the header */
 }
 
 .header_2 {
-	position: relative;
-	top: 0px; left: 132px; bottom: 111px;
+	position: absolute;
+	top: 25px; left: 132px; bottom: 111px;
+	padding-top:0;   /* Height of the header */
 }
 
 .header_3 {
-	position: relative;
-	top: 0px; left: 636px; bottom: 111px;
+	position: absolute;
+	top: 25px; left: 636px; bottom: 111px;
+	padding-top:0;   /* Height of the header */
 }
 
 .nav_1 {
 	position: absolute;
-	top: 112px; left: 30px; bottom: 801px;
+	top: 112px; left: 30px;
 	font-size: 10px;
+	padding-bottom:60px;   /* Height of the footer */
 	a:link { color: #000080 } /* unvisited links */
 	a:visited { color: #000080 } /* visited links */
 	a:hover { font-weight: bold } /* user hovers */
@@ -41,6 +65,7 @@ div {
 .image_area_1 {
 	position: absolute;
 	top: 112px; left: 133px; bottom: 423px;
+	padding-bottom:60px;   /* Height of the footer */
 }
 
 .bracket_2 {
@@ -50,6 +75,7 @@ div {
 .nav_2 {
 		position: absolute;
 		top: 424px; left: 133px;
+   		padding-bottom:60px;   /* Height of the footer */
 }
 
 .content_area_1 {
@@ -57,21 +83,28 @@ div {
 	top: 424px; left: 265px;
 	color: $primary-text-color;
 	border: 15px solid #fff;
-	padding-left: 10px;
+	padding-left: 0px;
 	padding-right: 10px;
+   	padding-bottom:60px;   /* Height of the footer */
 	width: 450px;
-	font-size: 16px;
+	font-size: 14px;
+	line-height: 1.5;
 	text-align: justify;
 }
 
 .footer {
-	position: absolute;
-	top: 600px; left: 0;
+	position: fixed;
+	bottom:0; /* absolutely positioned bottom:0; moves it to the bottom of the container div */
+
+/* When there is more than a page of content the container div is suppose to become larger and extends down below the bottom of the viewport - the footer should still positioned at the bottom of the container div but this time you need to scroll down to the end of the page to see it. - NOT BEHAVING CORRECTLY with postion: absolute... changed to position: fixed.*/
+
 	width:100%;
+	height:27px;   /* Height of the footer */
 	color: $primary-text-color;
 	background-color: $primary-background-color;
+	font-size: 10px;
 	a:link { color: #000080 } /* unvisited links */
 	a:visited { color: #000080 } /* visited links */
 	a:hover { font-weight: bold } /* user hovers */
-	a:active { color: #000080 } /* active links */	
+	a:active { color: #000080 } /* active links */
 }

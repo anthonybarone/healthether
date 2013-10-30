@@ -1,38 +1,38 @@
 class PagesController < ApplicationController
   
-  def the_idea
+  def concept_1_the_idea
     @concepts = Concept.all
   end
   
-  def product_creator
+  def concept_2_product_creator
     @concepts = Concept.all
   end
   
-  def product_types
+  def concept_3_product_types
     @concepts = Concept.all
   end
   
-  def product_specs
+  def concept_4_product_specs
     @concepts = Concept.all
   end
   
-  def key_players
+  def concept_5_key_players
     @concepts = Concept.all    
   end
   
-  def contracts
+  def concept_6_contracts
     @concepts = Concept.all    
   end
   
-  def payments
+  def concept_7_payments
     @concepts = Concept.all    
   end
   
-  def render_services
+  def concept_8_perform_services
     @concepts = Concept.all    
   end
   
-  def maintenance
+  def concept_9_maintenance
     @concepts = Concept.all    
   end
   

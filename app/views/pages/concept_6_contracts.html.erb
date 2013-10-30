@@ -1,0 +1,34 @@
+<div class="header_1">
+<%= image_tag("logos/healthether_logo_and_tagline.png", width: '636', height: '111') %>
+</div>
+
+<div class="header_2">
+</div>
+
+<div class="header_3">
+  <h5>
+  </h5>
+</div>
+
+<div class="nav_1" id="nav_1_hover:hover">
+    <% @concepts.each do |concept| %>
+      <%= link_to concept.name, concept.image %><br>
+      <br>
+    <% end %>
+</div>
+
+<div class="image_area_1">
+<%= image_tag("concepts/concept_6_contracts.png", :alt => "healthether.com", width: '636', height: '312') %>
+</div>
+
+<div class="nav_2">
+<%= image_tag("navigators/nav_2.png", :alt => "healthether.com", width: '132', height: '378') %>
+</div>
+
+<div class="content_area_1">
+Health insurers establish contracts with individuals & groups for health insurance premiums, the healthcare delivery system for healthcare service and supply fees, sales brokers & agents for sales commissions.<BR>
+<BR>
+Likewise, home builders establish contracts with home buyers, sub-contractors, product suppliers, sales brokers and agents. Contract terms and conditions influence the behaviors, actions and decisions made by all key players. Contracts should be aligned with the way a product is designed, built and used to make all key players happy.
+</div>
+
+<%= render "layouts/footer" %>

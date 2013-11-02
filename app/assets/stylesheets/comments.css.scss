@@ -1,0 +1,22 @@
+// Place all the styles related to the comments controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "colors";
+
+.comments_left_bracket {
+	position: absolute;
+	top: 112px; left: 133px; bottom: 423px;
+	padding-bottom:0px;   /* Height of the footer */	
+}
+
+.comments_area_1 {
+		position: absolute;
+		top: 112px; left: 199px; bottom: 423px;
+		padding-bottom:0px;   /* Height of the footer */
+	}
+	
+.comments_right_bracket {
+		position: absolute;
+		top: 112px; left: 703px; bottom: 423px;
+		padding-bottom:0px;   /* Height of the footer */
+	}	

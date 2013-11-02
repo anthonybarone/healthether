@@ -1,4 +1,6 @@
 Healthether::Application.routes.draw do
+  resources :comments
+
   resources :concepts
   
   get '/pages/concept_1_the_idea', to: 'pages#concept_1_the_idea'

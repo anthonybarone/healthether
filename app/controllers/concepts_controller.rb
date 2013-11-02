@@ -5,6 +5,7 @@ class ConceptsController < ApplicationController
   end
   
   def new
+        @concepts = Concept.all
         @concept = Concept.new
   end
   

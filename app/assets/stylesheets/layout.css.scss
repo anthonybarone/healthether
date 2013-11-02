@@ -12,6 +12,7 @@ body {
    min-height:100%;
    height:100%;
    position:relative;
+
 }
 
 .header {
@@ -32,18 +33,21 @@ body {
 	position: absolute;
 	top: 25px; left: 10px; bottom: 111px;
 	padding-top:0;   /* Height of the header */
+
 }
 
 .header_2 {
 	position: absolute;
 	top: 25px; left: 132px; bottom: 111px;
 	padding-top:0;   /* Height of the header */
+
 }
 
 .header_3 {
 	position: absolute;
 	top: 25px; left: 636px; bottom: 111px;
 	padding-top:0;   /* Height of the header */
+
 }
 
 .nav_1 {
@@ -100,11 +104,11 @@ body {
 
 	width:100%;
 	height:27px;   /* Height of the footer */
-	color: $primary-text-color;
-	background-color: $primary-background-color;
+	color: $footer-text-color;
+	background-color: $footer-background-color;
 	font-size: 10px;
-	a:link { color: #000080 } /* unvisited links */
-	a:visited { color: #000080 } /* visited links */
+	a:link { color: $footer-link-color } /* unvisited links */
+	a:visited { color: $footer-link-color } /* visited links */
 	a:hover { font-weight: bold } /* user hovers */
-	a:active { color: #000080 } /* active links */
+	a:active { color: $footer-link-color } /* active links */
 }

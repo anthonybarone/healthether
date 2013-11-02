@@ -1,0 +1,23 @@
+<%= form_for(@comment) do |f| %>
+  <%= render "shared/errors", object: @comment %>
+<br>
+<br>
+
+        <%= f.label :Firstname %>
+        <%= f.text_field :firstname, cols: 40, rows: 1 %>
+<br>
+        <%= f.label :Lastname %>
+        <%= f.text_area :lastname, cols: 40, rows: 1 %>
+<br>
+        <%= f.label :Email %>
+        <%= f.text_area :email, cols: 40, rows: 1 %>
+<br>
+        <%= f.label :Comment %>
+        <%= f.text_area :note, cols: 40, rows: 8 %>
+    <p>
+      <%= f.submit %>
+      <%= link_to "Cancel", root_path, class: 'button' %>
+    </p>
+
+<% end %>
+<br>

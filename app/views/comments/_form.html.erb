@@ -2,22 +2,27 @@
   <%= render "shared/errors", object: @comment %>
 <br>
 <br>
-
-        <%= f.label :Firstname %>
-        <%= f.text_field :firstname, cols: 40, rows: 1 %>
-<br>
-        <%= f.label :Lastname %>
-        <%= f.text_area :lastname, cols: 40, rows: 1 %>
-<br>
-        <%= f.label :Email %>
-        <%= f.text_area :email, cols: 40, rows: 1 %>
-<br>
-        <%= f.label :Comment %>
-        <%= f.text_area :note, cols: 40, rows: 8 %>
-    <p>
-      <%= f.submit %>
-      <%= link_to "Cancel", root_path, class: 'button' %>
-    </p>
-
+<table>
+  <tr>        
+        <th><%= f.label :firstname, "First Name:" %></th>
+        <td><%= f.text_field :firstname, cols: 60, rows: 1 %></td>
+  </tr>      
+  <tr>
+        <th><%= f.label :lastname, "Last Name:" %></th>
+        <td><%= f.text_field :lastname, cols: 60, rows: 1 %></td>
+  </tr>
+  <tr>
+        <th><%= f.label :email, "E-mail" %></th>
+        <td><%= f.text_field :email, cols: 60, rows: 1 %></td>
+  </tr>
+  <tr>
+        <th><%= f.label :feedback, "Feedback:" %></th>
+        <td><%= f.text_area :note, cols: 40, rows: 8 %></td>
+  </tr>
+  <tr>
+      <th><%= f.submit %></th>
+      <td><%= link_to "Cancel", root_path, class: 'button' %></td>
+  </tr>
+</table>
 <% end %>
 <br>

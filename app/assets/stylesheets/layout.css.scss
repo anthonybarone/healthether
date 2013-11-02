@@ -19,7 +19,7 @@ body {
 	position: absolute;
 	top:0; /* absolutely positioned top:0; moves it to the top of the container div */
 	width:100%;
-	height:25px;   /* Height of the header */
+	height:0px;   /* SET TO 0 temporarily for flash notice. Height of the header */
 	color: $header-text-color;
 	background-color: $header-background-color;
 	font-size: 10px;

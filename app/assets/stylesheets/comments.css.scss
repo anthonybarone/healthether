@@ -20,3 +20,28 @@
 		top: 112px; left: 703px; bottom: 423px;
 		padding-bottom:0px;   /* Height of the footer */
 	}	
+	
+	
+/* FLASHES */
+
+.flash {
+	position: absolute;
+	top:0; /* absolutely positioned top:0; moves it to the top of the container div */
+	width:100%;
+	font-size: 14px;
+	color: $primary-text-color;
+	border-radius: 4px;
+	padding: 10px;
+	margin: 0;
+	text-align: center;
+	text-transform: uppercase;
+	box-shadow: #ffc 0 0 4px;
+	
+&.notice {
+	    background-color: $flash-notice-color;
+	  }
+
+&.alert {
+	    background-color: $flash-alert-color;
+	  }
+	}	

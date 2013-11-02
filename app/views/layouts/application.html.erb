@@ -14,6 +14,18 @@
 
   <div class="container">
 
+   <% if flash[:notice] %>
+     <br>
+      <h1 class="flash notice">
+        <%= flash[:notice] %>
+    <% end %></h1>
+
+    <% if flash[:alert] %>
+     <br>
+    <h1 class="flash alert">
+      <%= flash[:alert] %>
+  <% end %></h1>
+
     <%= render "layouts/header" %>
     <%= yield %>
     <%= render "layouts/footer" %>

@@ -1,5 +1,7 @@
 class ConceptsController < ApplicationController
   
+  before_action :authorize, only: [:edit, :update]
+  
   def index
         @concepts = Concept.all
   end

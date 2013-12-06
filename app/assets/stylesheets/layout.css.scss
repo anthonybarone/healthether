@@ -19,9 +19,15 @@ body {
 	position: absolute;
 	top:0; /* absolutely positioned top:0; moves it to the top of the container div */
 	width:100%;
-	height:0px;   /* SET TO 0 temporarily for flash notice. Height of the header */
+	height:20px;   /* SET TO 0 temporarily for flash notice. Height of the header */
 	color: $header-text-color;
+    
+	margin: 0px;
 	background-color: $header-background-color;
+	background-image: {};
+	padding: 2px;
+	border: 10px;
+
 	font-size: 10px;
 	a:link { color: $header-link-color } /* unvisited links */
 	a:visited { color: $header-link-color } /* visited links */

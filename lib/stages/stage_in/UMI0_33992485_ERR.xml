@@ -1,0 +1,205 @@
+<JobOutput><Product>FA</Product><Release>501</Release><Type>Error</Type><Job name="erccsprocumi0" returncode="0" elapsed="0 Days 0:0:42" bt="11/14/2013 7:33:08 AM" et="11/14/2013 7:33:50 AM"><Step number="3000" returncode="0" elapsed="0 Days 0:0:40" bt="11/14/2013 7:33:10 AM" et="11/14/2013 7:33:50 AM"><Action number="3000_1000" iteration="1" type="E" returncode="0"><Engine number="1" appserver="FA5PRDBAR02&#xA;" processid="7744&#xA;User              : FAPRD_BATCH&#xA;&#xA;" returncode="0"><Error><![CDATA[
+TriZetto Corporation cerbnav0
+Batch Router Module
+Version 501.21307.10204.1011 Jul  2 2013 18:55:52
+Copyright © 1997-2013 TriZetto Corporation. All rights reserved.
+
+Application Server: FA5PRDBAR02
+Process ID        : 7744
+User              : FAPRD_BATCH
+
+*-- Standard Error --*
+================================
+Initialization Phase Started.
+
+Actual Run Start Date and Time     [11/14/2013 07:33:20.025]
+
+Initialization Phase Complete.
+================================
+================================
+Execution Phase Started.
+
+
+TriZetto Corporation CCSLUMI0
+Utilization Management Import
+Version 501.21307.10204.1011 Jul  2 2013 19:18:11
+Copyright © 1997-2013 TriZetto Corporation. All rights reserved.
+
+Application Server: FA5PRDBAR02
+Process ID        : 7744
+User              : FAPRD_BATCH
+
+*-- Standard Error --*
+================================
+Initialization Phase Started.
+
+Actual Run Start Date and Time     [11/14/2013 07:33:20.025]
+
+Initialization Phase Complete.
+================================
+================================
+Execution Phase Started.
+
+Rectype: UMIN 
+    Key:UMUM_REF_ID=MA1003777
+        UMIN ERROR  :Allowed days sum on UMLS must equal    UMIN_TOT_ALW_DAYS=71
+Rectype: UMIR 
+    Key:UMUM_REF_ID=MA1003777,UMIR_SEQ_NO=4
+        UMIR ERROR  :Row does not exist                     
+Rectype: UMLS 
+    Key:UMUM_REF_ID=MA1003777,UMIR_SEQ_NO=4,UMLS_SEQ_NO=4
+        UMLS ERROR  :Row does not exist                     
+        UMLS ERROR  :UMLS found without UMIR                
+Rectype: UMIR 
+    Key:UMUM_REF_ID=MA1003777,UMIR_SEQ_NO=5
+        UMIR ERROR  :Row does not exist                     
+Rectype: UMLS 
+    Key:UMUM_REF_ID=MA1003777,UMIR_SEQ_NO=5,UMLS_SEQ_NO=5
+        UMLS ERROR  :Row does not exist                     
+        UMLS ERROR  :UMLS found without UMIR                
+Rectype: UMIR 
+    Key:UMUM_REF_ID=MA1003777,UMIR_SEQ_NO=6
+        UMIR ERROR  :Row does not exist                     
+Rectype: UMLS 
+    Key:UMUM_REF_ID=MA1003777,UMIR_SEQ_NO=6,UMLS_SEQ_NO=6
+        UMLS ERROR  :Row does not exist                     
+        UMLS ERROR  :UMLS found without UMIR                
+Rectype: UMIR 
+    Key:UMUM_REF_ID=MA1003777,UMIR_SEQ_NO=7
+        UMIR ERROR  :Row does not exist                     
+Rectype: UMLS 
+    Key:UMUM_REF_ID=MA1003777,UMIR_SEQ_NO=7,UMLS_SEQ_NO=7
+        UMLS ERROR  :Row does not exist                     
+        UMLS ERROR  :UMLS found without UMIR                
+ 
+Rectype: UMIN 
+    Key:UMUM_REF_ID=MA1010398
+        UMIN ERROR  :Allowed days sum on UMLS must equal    UMIN_TOT_ALW_DAYS=57
+Rectype: UMIR 
+    Key:UMUM_REF_ID=MA1010398,UMIR_SEQ_NO=5
+        UMIR ERROR  :Row does not exist                     
+Rectype: UMLS 
+    Key:UMUM_REF_ID=MA1010398,UMIR_SEQ_NO=5,UMLS_SEQ_NO=5
+        UMLS ERROR  :Row does not exist                     
+        UMLS ERROR  :UMLS found without UMIR                
+Rectype: UMIR 
+    Key:UMUM_REF_ID=MA1010398,UMIR_SEQ_NO=6
+        UMIR ERROR  :Row does not exist                     
+Rectype: UMLS 
+    Key:UMUM_REF_ID=MA1010398,UMIR_SEQ_NO=6,UMLS_SEQ_NO=6
+        UMLS ERROR  :Row does not exist                     
+        UMLS ERROR  :UMLS found without UMIR                
+ 
+Rectype: UMIN 
+    Key:UMUM_REF_ID=MA1010429
+        UMIN ERROR  :Allowed days sum on UMLS must equal    UMIN_TOT_ALW_DAYS=100
+Rectype: UMIR 
+    Key:UMUM_REF_ID=MA1010429,UMIR_SEQ_NO=2
+        UMIR ERROR  :Row does not exist                     
+Rectype: UMLS 
+    Key:UMUM_REF_ID=MA1010429,UMIR_SEQ_NO=2,UMLS_SEQ_NO=2
+        UMLS ERROR  :Row does not exist                     
+        UMLS ERROR  :UMLS found without UMIR                
+Rectype: UMIR 
+    Key:UMUM_REF_ID=MA1010429,UMIR_SEQ_NO=3
+        UMIR ERROR  :Row does not exist                     
+Rectype: UMLS 
+    Key:UMUM_REF_ID=MA1010429,UMIR_SEQ_NO=3,UMLS_SEQ_NO=3
+        UMLS ERROR  :Row does not exist                     
+        UMLS ERROR  :UMLS found without UMIR                
+Rectype: UMIR 
+    Key:UMUM_REF_ID=MA1010429,UMIR_SEQ_NO=4
+        UMIR ERROR  :Row does not exist                     
+Rectype: UMLS 
+    Key:UMUM_REF_ID=MA1010429,UMIR_SEQ_NO=4,UMLS_SEQ_NO=4
+        UMLS ERROR  :Row does not exist                     
+        UMLS ERROR  :UMLS found without UMIR                
+ 
+Rectype: UMLS 
+    Key:UMUM_REF_ID=MA1011609,UMIR_SEQ_NO=5,UMLS_SEQ_NO=5
+        UMLS ERROR  :UMLS_MCTR_RDNY Required                UMLS_LOS_AUTH=0
+ 
+Rectype: UMLS 
+    Key:UMUM_REF_ID=MA1015974,UMIR_SEQ_NO=1,UMLS_SEQ_NO=1
+        UMLS ERROR  :ALLOW_DAYS must be > or = PAID_DAYS    
+ 
+Rectype: UMIN 
+    Key:UMUM_REF_ID=MA1018290
+        UMIN ERROR  :Allowed days sum on UMLS must equal    UMIN_TOT_ALW_DAYS=28
+Rectype: UMIR 
+    Key:UMUM_REF_ID=MA1018290,UMIR_SEQ_NO=2
+        UMIR ERROR  :Row does not exist                     
+Rectype: UMLS 
+    Key:UMUM_REF_ID=MA1018290,UMIR_SEQ_NO=2,UMLS_SEQ_NO=2
+        UMLS ERROR  :Row does not exist                     
+        UMLS ERROR  :UMLS found without UMIR                
+ 
+Rectype: UMIN 
+    Key:UMUM_REF_ID=MA1018469
+        UMIN ERROR  :UMIN found without UMIR                
+Rectype: UMIR 
+    Key:UMUM_REF_ID=MA1018469,UMIR_SEQ_NO=1
+        UMIR ERROR  :Row does not exist                     
+Rectype: UMLS 
+    Key:UMUM_REF_ID=MA1018469,UMIR_SEQ_NO=1,UMLS_SEQ_NO=1
+        UMLS ERROR  :Row does not exist                     
+        UMLS ERROR  :UMLS found without UMIR                
+ 
+Rectype: UMIR 
+    Key:UMUM_REF_ID=MA1022111,UMIR_SEQ_NO=3
+        UMIR ERROR  :Row does not exist                     
+Rectype: UMLS 
+    Key:UMUM_REF_ID=MA1022111,UMIR_SEQ_NO=3,UMLS_SEQ_NO=3
+        UMLS ERROR  :Row does not exist                     
+        UMLS ERROR  :UMLS found without UMIR                
+ 
+Rectype: UMIN 
+    Key:UMUM_REF_ID=MA1022884
+        UMIN ERROR  :Allowed days sum on UMLS must equal    UMIN_TOT_ALW_DAYS=15
+Rectype: UMIR 
+    Key:UMUM_REF_ID=MA1022884,UMIR_SEQ_NO=2
+        UMIR ERROR  :Row does not exist                     
+Rectype: UMLS 
+    Key:UMUM_REF_ID=MA1022884,UMIR_SEQ_NO=2,UMLS_SEQ_NO=2
+        UMLS ERROR  :Row does not exist                     
+        UMLS ERROR  :UMLS found without UMIR                
+ 
+Rectype: UMSV 
+    Key:UMUM_REF_ID=MA1026057,UMSV_SEQ_NO=1
+        UMSV ERROR  :UMSV_UNITS_ALLOW must equal zero       UMVT_STS=UP
+Rectype: UMIN 
+    Key:UMUM_REF_ID=MA1026057
+        UMIN ERROR  :UMIN found without UMIR                
+Rectype: UMIR 
+    Key:UMUM_REF_ID=MA1026057,UMIR_SEQ_NO=1
+        UMIR ERROR  :Row does not exist                     
+Rectype: UMLS 
+    Key:UMUM_REF_ID=MA1026057,UMIR_SEQ_NO=1,UMLS_SEQ_NO=1
+        UMLS ERROR  :Row does not exist                     
+        UMLS ERROR  :UMLS found without UMIR                
+ 
+
+Execution Phase Complete.
+================================
+================================
+Termination Phase Started.
+
+Actual Run End Date and Time       [11/14/2013 07:33:48.729]
+
+Termination Phase Complete.
+The Highest return code is: 0
+================================
+
+
+Execution Phase Complete.
+================================
+================================
+Termination Phase Started.
+
+Actual Run End Date and Time       [11/14/2013 07:33:48.822]
+
+Termination Phase Complete.
+The Highest return code is: 0
+================================
+
+]]></Error></Engine></Action></Step></Job></JobOutput>

@@ -1,13 +1,36 @@
-<h1>Log In</h1>
+
+<div class="comments_left_bracket">
+<%= image_tag("brackets/left_bracket.png", width: '66', height: '312') %>
+</div>
+
+<div class="comments_area_1">
+<h2>Sign in to <%= link_to "healthether", root_path %></h2>
 
 <%= form_tag sessions_path do %>
-  <div class="field">
+    <div class="field" id="id_login-email-username" name="login-email-username" placeholder="Your email address" type="text">
     <%= label_tag :email %><br />
     <%= text_field_tag :email, params[:email] %>
-  </div>
-  <div class="field">
+    </div>
+
+    <div class="field">
     <%= label_tag :password %><br />
     <%= password_field_tag :password %>
-  </div>
-  <div class="actions"><%= submit_tag "Log In" %></div>
+    </div>
+    
+    <div class="field">
+    <%= label_tag :remember_me %>
+    <%= check_box_tag :remember_me, 1, params[:remember_me] %>
+    </div>
+   
+    <%= submit_tag "Log In" %>
 <% end %>
+
+<h5><%= link_to "Help: I can't sign in or forgot my username/password?", new_password_reset_path %></h5>
+
+<h5>Don't have a healthether account?  <%= link_to "Sign up today.", signup_path %> </h5>
+<br>
+</div>
+
+<div class="comments_right_bracket">
+<%= image_tag("brackets/right_bracket.png", width: '66', height: '312') %>
+</div>

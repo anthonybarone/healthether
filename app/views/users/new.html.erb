@@ -1,4 +1,9 @@
-<h1>Sign Up</h1>
+<div class="comments_left_bracket">
+<%= image_tag("brackets/left_bracket.png", width: '66', height: '312') %>
+</div>
+
+<div class="comments_area_1">
+<h2>Sign Up to <%= link_to "healthether", root_path %></h2>
 
 <%= form_for @user do |f| %>
   <% if @user.errors.any? %>
@@ -26,3 +31,8 @@
   </div>
   <div class="actions"><%= f.submit "Sign Up" %></div>
 <% end %>
+</div>
+
+<div class="comments_right_bracket">
+<%= image_tag("brackets/right_bracket.png", width: '66', height: '312') %>
+</div>

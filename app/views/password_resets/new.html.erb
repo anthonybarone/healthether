@@ -1,0 +1,20 @@
+<div class="comments_left_bracket">
+<%= image_tag("brackets/left_bracket.png", width: '66', height: '312') %>
+</div>
+
+<div class="comments_area_1">
+
+<h1>Reset Password</h1>
+
+<%= form_tag password_resets_path, :method => :post do %>
+
+    <%= label_tag :email %>
+    <%= text_field_tag :email, params[:email] %>
+  <div class="actions"><%= submit_tag "Reset Password" %></div>
+  </div>
+  </div>
+<% end %>
+
+<div class="comments_right_bracket">
+<%= image_tag("brackets/right_bracket.png", width: '66', height: '312') %>
+</div>

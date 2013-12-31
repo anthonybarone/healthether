@@ -113,6 +113,11 @@ body {
 	color: $footer-text-color;
 	background-color: $footer-background-color;
 	font-size: 10px;
+	border-radius: 4px;
+	padding: 4px;
+	margin: 0;
+	text-align: justify;
+	box-shadow: #ffc 0 0 4px;
 	a:link { color: $footer-link-color } /* unvisited links */
 	a:visited { color: $footer-link-color } /* visited links */
 	a:hover { font-weight: bold } /* user hovers */

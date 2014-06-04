@@ -1,15 +1,16 @@
-
 <div class="comments_left_bracket">
 <%= image_tag("brackets/left_bracket.png", width: '66', height: '312') %>
 </div>
 
 <div class="comments_area_1">
-<h2>Sign in to <%= link_to "healthether", root_path %></h2>
+<h2>Sign in to <%= link_to "healthether", root_path %> </h2>
 
-<%= form_tag sessions_path do %>
+<% # BEGIN OF COMMENT session does not have an active model record object that represents a session.  Instead, we just need a form with some fields for an e-mail and a password.  Use the form_tag helper instead of form_for.  Instead of giving the form_tag helper method an object, give it the url where this form will post its data.  To generate this data, use another route helper method. We want it to go to sesssions create because signing in is like creating a new session so use session_path.  This aligns with the singular route configuration for session in routes.rb too.  Still need to figure out what we need to change in the destroy action of the sessions controller to make this work end to end END OF COMMENT %>
+
+<%= form_tag session_path do %>
     <div class="field" id="id_login-email-username" name="login-email-username" placeholder="Your email address" type="text">
     <%= label_tag :email %><br />
-    <%= text_field_tag :email, params[:email] %>
+    <%= email_field_tag :email, params[:email] %>
     </div>
 
     <div class="field">

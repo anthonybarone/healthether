@@ -1,9 +1,9 @@
 <div class="header">
   <% if current_user %>
-    Logged in as <%= current_user.email %>.
-    <%= link_to "Log Out", logout_path %>
+    <%= link_to current_user.email, current_user %> is in the house!
+    <%= link_to "Sign Out", signout_path, method: :delete, class: 'button' %>
   <% else %>
     <%= link_to "Sign Up", signup_path %> or
-    <%= link_to "Log In", login_path %>
+    <%= link_to "Sign In", signin_path %>
   <% end %>
 </div>

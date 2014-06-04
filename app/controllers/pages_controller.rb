@@ -1,4 +1,5 @@
 class PagesController < ApplicationController
+
   
   def concept_1_the_idea
     @concepts = Concept.all

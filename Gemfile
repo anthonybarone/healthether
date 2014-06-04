@@ -53,3 +53,12 @@ gem 'nokogiri', '~> 1.6.0'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+gem 'rspec-rails', group: [:test, :development]
+group :test do
+  gem 'factory_girl_rails'
+  gem 'capybara'
+  gem 'launchy'
+  gem 'guard-rspec'
+  gem 'rb-fsevent'
+end

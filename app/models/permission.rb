@@ -16,6 +16,7 @@ def initialize(current_user_object)
   permit_action :users, [:new, :create]
   permit_action :sessions, [:new, :create, :destroy]
   permit_action :password_resets, [:new, :create, :edit, :update]
+  permit_action :concepts, [:new, :create, :edit, :update]
   permit_action :topics, [:index, :show]
   permit_action :pages, [:concept_1_the_idea, :concept_2_product_creator, :concept_3_product_types, :concept_4_product_specs, :concept_5_key_players, :concept_6_contracts, :concept_7_payments, :concept_8_perform_services]
 # permision definitions when current_user != nil (require_sign_in)
